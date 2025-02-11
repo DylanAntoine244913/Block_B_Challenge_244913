@@ -1,0 +1,561 @@
+
+(base) C:\Users\dylan>pip install yfinance ta
+Requirement already satisfied: yfinance in c:\users\dylan\miniconda3\lib\site-packages (0.2.52)
+Requirement already satisfied: ta in c:\users\dylan\miniconda3\lib\site-packages (0.11.0)
+Requirement already satisfied: pandas>=1.3.0 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (2.2.3)
+Requirement already satisfied: numpy>=1.16.5 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (2.2.2)
+Requirement already satisfied: requests>=2.31 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (2.32.3)
+Requirement already satisfied: multitasking>=0.0.7 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (0.0.11)
+Requirement already satisfied: lxml>=4.9.1 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (5.3.1)
+Requirement already satisfied: platformdirs>=2.0.0 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (3.10.0)
+Requirement already satisfied: pytz>=2022.5 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (2025.1)
+Requirement already satisfied: frozendict>=2.3.4 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (2.4.2)
+Requirement already satisfied: peewee>=3.16.2 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (3.17.9)
+Requirement already satisfied: beautifulsoup4>=4.11.1 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (4.13.3)
+Requirement already satisfied: html5lib>=1.1 in c:\users\dylan\miniconda3\lib\site-packages (from yfinance) (1.1)
+Requirement already satisfied: soupsieve>1.2 in c:\users\dylan\miniconda3\lib\site-packages (from beautifulsoup4>=4.11.1->yfinance) (2.6)
+Requirement already satisfied: typing-extensions>=4.0.0 in c:\users\dylan\miniconda3\lib\site-packages (from beautifulsoup4>=4.11.1->yfinance) (4.12.2)
+Requirement already satisfied: six>=1.9 in c:\users\dylan\miniconda3\lib\site-packages (from html5lib>=1.1->yfinance) (1.17.0)
+Requirement already satisfied: webencodings in c:\users\dylan\miniconda3\lib\site-packages (from html5lib>=1.1->yfinance) (0.5.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\dylan\miniconda3\lib\site-packages (from pandas>=1.3.0->yfinance) (2.9.0.post0)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\dylan\miniconda3\lib\site-packages (from pandas>=1.3.0->yfinance) (2025.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\dylan\miniconda3\lib\site-packages (from requests>=2.31->yfinance) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\dylan\miniconda3\lib\site-packages (from requests>=2.31->yfinance)(3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\dylan\miniconda3\lib\site-packages (from requests>=2.31->yfinance) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\dylan\miniconda3\lib\site-packages (from requests>=2.31->yfinance) (2024.8.30)
+
+(base) C:\Users\dylan>conda env list
+# conda environments:
+#
+                         C:\Users\dylan\anaconda3
+                         C:\Users\dylan\anaconda3\envs\block_a
+                         C:\Users\dylan\anaconda3\envs\block_b
+base                  *  C:\Users\dylan\miniconda3
+                         c:\Users\dylan\anaconda3\envs\block_b
+
+
+(base) C:\Users\dylan>activate block_b
+
+EnvironmentNameNotFound: Could not find conda environment: block_b
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+(base) C:\Users\dylan>conda info --envs
+# conda environments:
+#
+                         C:\Users\dylan\anaconda3
+                         C:\Users\dylan\anaconda3\envs\block_a
+                         C:\Users\dylan\anaconda3\envs\block_b
+base                  *  C:\Users\dylan\miniconda3
+                         c:\Users\dylan\anaconda3\envs\block_b
+
+
+(base) C:\Users\dylan>where conda
+C:\Users\dylan\miniconda3\Library\bin\conda.bat
+C:\Users\dylan\miniconda3\Scripts\conda.exe
+C:\Users\dylan\miniconda3\condabin\conda.bat
+
+(base) C:\Users\dylan>C:\Users\dylan\anaconda3\Scripts\activate
+
+(base) C:\Users\dylan>conda activate block_b
+
+EnvironmentNameNotFound: Could not find conda environment: block_b
+You can list all discoverable environments with `conda info --envs`.
+
+
+
+(base) C:\Users\dylan>conda config --append envs_dirs C:\Users\dylan\anaconda3\envs
+
+(base) C:\Users\dylan>conda activate block_b
+
+(block_b) C:\Users\dylan>pip install yfinance ta
+Collecting yfinance
+  Using cached yfinance-0.2.52-py2.py3-none-any.whl.metadata (5.8 kB)
+Collecting ta
+  Using cached ta-0.11.0.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: pandas>=1.3.0 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from yfinance) (2.0.3)
+Requirement already satisfied: numpy>=1.16.5 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from yfinance) (1.24.4)
+Collecting requests>=2.31 (from yfinance)
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting multitasking>=0.0.7 (from yfinance)
+  Using cached multitasking-0.0.11-py3-none-any.whl.metadata (5.5 kB)
+Collecting lxml>=4.9.1 (from yfinance)
+  Downloading lxml-5.3.1-cp38-cp38-win_amd64.whl.metadata (3.6 kB)
+Requirement already satisfied: platformdirs>=2.0.0 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from yfinance) (4.3.6)
+Requirement already satisfied: pytz>=2022.5 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from yfinance) (2024.2)
+Collecting frozendict>=2.3.4 (from yfinance)
+  Downloading frozendict-2.4.6-cp38-cp38-win_amd64.whl.metadata (23 kB)
+Collecting peewee>=3.16.2 (from yfinance)
+  Using cached peewee-3.17.9.tar.gz (3.0 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting beautifulsoup4>=4.11.1 (from yfinance)
+  Using cached beautifulsoup4-4.13.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting html5lib>=1.1 (from yfinance)
+  Using cached html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4>=4.11.1->yfinance)
+  Using cached soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: typing-extensions>=4.0.0 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from beautifulsoup4>=4.11.1->yfinance) (4.12.2)
+Requirement already satisfied: six>=1.9 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from html5lib>=1.1->yfinance) (1.16.0)
+Collecting webencodings (from html5lib>=1.1->yfinance)
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from pandas>=1.3.0->yfinance) (2.9.0)
+Requirement already satisfied: tzdata>=2022.1 in c:\users\dylan\anaconda3\envs\block_b\lib\site-packages (from pandas>=1.3.0->yfinance) (2024.2)
+Collecting charset-normalizer<4,>=2 (from requests>=2.31->yfinance)
+  Downloading charset_normalizer-3.4.1-cp38-cp38-win_amd64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31->yfinance)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.31->yfinance)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.31->yfinance)
+  Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Using cached yfinance-0.2.52-py2.py3-none-any.whl (108 kB)
+Using cached beautifulsoup4-4.13.3-py3-none-any.whl (186 kB)
+Downloading frozendict-2.4.6-cp38-cp38-win_amd64.whl (37 kB)
+Using cached html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Downloading lxml-5.3.1-cp38-cp38-win_amd64.whl (3.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 16.2 MB/s eta 0:00:00
+Using cached multitasking-0.0.11-py3-none-any.whl (8.5 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading charset_normalizer-3.4.1-cp38-cp38-win_amd64.whl (102 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Using cached soupsieve-2.6-py3-none-any.whl (36 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: ta, peewee
+  Building wheel for ta (setup.py) ... done
+  Created wheel for ta: filename=ta-0.11.0-py3-none-any.whl size=29421 sha256=9f1c640baa3de5857c9c5f9752946f3c51caaed0593ba267a8c747d8af1240a1
+  Stored in directory: c:\users\dylan\appdata\local\pip\cache\wheels\b1\8e\55\64e87f8cc064571b0096ff2e5f32a4d29e444705f33b361a3d
+  Building wheel for peewee (pyproject.toml) ... done
+  Created wheel for peewee: filename=peewee-3.17.9-py3-none-any.whl size=139045 sha256=8b9dda8248f1e6a9e3415f32b5afcdb2aa01afa46c686970cde365e670aaa6d8
+  Stored in directory: c:\users\dylan\appdata\local\pip\cache\wheels\5f\5b\2b\f993083c828c66707ef9e516072f4b3b41d6c68cf00ab57e77
+Successfully built ta peewee
+Installing collected packages: webencodings, peewee, multitasking, urllib3, soupsieve, lxml, idna, html5lib, frozendict, charset-normalizer, certifi, requests, beautifulsoup4, yfinance, ta
+Successfully installed beautifulsoup4-4.13.3 certifi-2025.1.31 charset-normalizer-3.4.1 frozendict-2.4.6 html5lib-1.1 idna-3.10 lxml-5.3.1 multitasking-0.0.11 peewee-3.17.9 requests-2.32.3 soupsieve-2.6 ta-0.11.0 urllib3-2.2.3 webencodings-0.5.1yfinance-0.2.52
+
+(block_b) C:\Users\dylan>conda deactivate
+
+(base) C:\Users\dylan>conda create -n block_b_challenge python=3.12.3 -y
+Retrieving notices: ...working... done
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\dylan\anaconda3\envs\block_b_challenge
+
+  added / updated specs:
+    - python=3.12.3
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2024.12.31 |       haa95532_0         129 KB
+    expat-2.6.4                |       h8ddb27b_0         257 KB
+    pip-25.0                   |  py312haa95532_0         3.0 MB
+    python-3.12.3              |       h1d929f7_1        16.3 MB
+    setuptools-75.8.0          |  py312haa95532_0         2.2 MB
+    tzdata-2025a               |       h04d1e81_0         117 KB
+    vc-14.42                   |       haa95532_4          11 KB
+    vs2015_runtime-14.42.34433 |       he0abc0d_4         1.2 MB
+    wheel-0.45.1               |  py312haa95532_0         177 KB
+    ------------------------------------------------------------
+                                           Total:        23.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-h2bbff1b_6
+  ca-certificates    pkgs/main/win-64::ca-certificates-2024.12.31-haa95532_0
+  expat              pkgs/main/win-64::expat-2.6.4-h8ddb27b_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  openssl            pkgs/main/win-64::openssl-3.0.15-h827c3e9_0
+  pip                pkgs/main/win-64::pip-25.0-py312haa95532_0
+  python             pkgs/main/win-64::python-3.12.3-h1d929f7_1
+  setuptools         pkgs/main/win-64::setuptools-75.8.0-py312haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.45.3-h2bbff1b_0
+  tk                 pkgs/main/win-64::tk-8.6.14-h0416ee5_0
+  tzdata             pkgs/main/noarch::tzdata-2025a-h04d1e81_0
+  vc                 pkgs/main/win-64::vc-14.42-haa95532_4
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.42.34433-he0abc0d_4
+  wheel              pkgs/main/win-64::wheel-0.45.1-py312haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate block_b_challenge
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\dylan>conda activaten block_b_challenge
+usage: conda-script.py [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda-script.py: error: argument COMMAND: invalid choice: 'activaten' (choose from 'activate', 'clean', 'commands', 'compare', 'config', 'create', 'deactivate', 'env', 'export', 'info', 'init', 'install', 'list', 'notices', 'package', 'content-trust', 'doctor', 'repoquery', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade')
+
+(base) C:\Users\dylan>conda activate block_b_challenge
+
+(block_b_challenge) C:\Users\dylan>pip install yfinance pandas ta scikit-learn matplotlib
+Collecting yfinance
+  Using cached yfinance-0.2.52-py2.py3-none-any.whl.metadata (5.8 kB)
+Collecting pandas
+  Using cached pandas-2.2.3-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting ta
+  Using cached ta-0.11.0-py3-none-any.whl
+Collecting scikit-learn
+  Using cached scikit_learn-1.6.1-cp312-cp312-win_amd64.whl.metadata (15 kB)
+Collecting matplotlib
+  Using cached matplotlib-3.10.0-cp312-cp312-win_amd64.whl.metadata (11 kB)
+Collecting numpy>=1.16.5 (from yfinance)
+  Using cached numpy-2.2.2-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting requests>=2.31 (from yfinance)
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting multitasking>=0.0.7 (from yfinance)
+  Using cached multitasking-0.0.11-py3-none-any.whl.metadata (5.5 kB)
+Collecting lxml>=4.9.1 (from yfinance)
+  Using cached lxml-5.3.1-cp312-cp312-win_amd64.whl.metadata (3.8 kB)
+Collecting platformdirs>=2.0.0 (from yfinance)
+  Using cached platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Collecting pytz>=2022.5 (from yfinance)
+  Using cached pytz-2025.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting frozendict>=2.3.4 (from yfinance)
+  Downloading frozendict-2.4.6-py312-none-any.whl.metadata (23 kB)
+Collecting peewee>=3.16.2 (from yfinance)
+  Using cached peewee-3.17.9-py3-none-any.whl
+Collecting beautifulsoup4>=4.11.1 (from yfinance)
+  Using cached beautifulsoup4-4.13.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting html5lib>=1.1 (from yfinance)
+  Using cached html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Using cached scipy-1.15.1-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Using cached threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.1-cp312-cp312-win_amd64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Using cached fonttools-4.56.0-cp312-cp312-win_amd64.whl.metadata (103 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.4.8-cp312-cp312-win_amd64.whl.metadata (6.3 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pillow>=8 (from matplotlib)
+  Using cached pillow-11.1.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Using cached pyparsing-3.2.1-py3-none-any.whl.metadata (5.0 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4>=4.11.1->yfinance)
+  Using cached soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Collecting typing-extensions>=4.0.0 (from beautifulsoup4>=4.11.1->yfinance)
+  Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.9 (from html5lib>=1.1->yfinance)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting webencodings (from html5lib>=1.1->yfinance)
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting charset-normalizer<4,>=2 (from requests>=2.31->yfinance)
+  Downloading charset_normalizer-3.4.1-cp312-cp312-win_amd64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31->yfinance)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.31->yfinance)
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.31->yfinance)
+  Using cached certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Using cached yfinance-0.2.52-py2.py3-none-any.whl (108 kB)
+Using cached pandas-2.2.3-cp312-cp312-win_amd64.whl (11.5 MB)
+Using cached scikit_learn-1.6.1-cp312-cp312-win_amd64.whl (11.1 MB)
+Using cached matplotlib-3.10.0-cp312-cp312-win_amd64.whl (8.0 MB)
+Using cached beautifulsoup4-4.13.3-py3-none-any.whl (186 kB)
+Using cached contourpy-1.3.1-cp312-cp312-win_amd64.whl (220 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.56.0-cp312-cp312-win_amd64.whl (2.2 MB)
+Downloading frozendict-2.4.6-py312-none-any.whl (16 kB)
+Using cached html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Using cached kiwisolver-1.4.8-cp312-cp312-win_amd64.whl (71 kB)
+Using cached lxml-5.3.1-cp312-cp312-win_amd64.whl (3.8 MB)
+Using cached multitasking-0.0.11-py3-none-any.whl (8.5 kB)
+Using cached numpy-2.2.2-cp312-cp312-win_amd64.whl (12.6 MB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached pillow-11.1.0-cp312-cp312-win_amd64.whl (2.6 MB)
+Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Using cached pyparsing-3.2.1-py3-none-any.whl (107 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.1-py2.py3-none-any.whl (507 kB)
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+Using cached scipy-1.15.1-cp312-cp312-win_amd64.whl (43.6 MB)
+Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Using cached tzdata-2025.1-py2.py3-none-any.whl (346 kB)
+Using cached certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading charset_normalizer-3.4.1-cp312-cp312-win_amd64.whl (102 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached soupsieve-2.6-py3-none-any.whl (36 kB)
+Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Installing collected packages: webencodings, pytz, peewee, multitasking, urllib3, tzdata, typing-extensions, threadpoolctl, soupsieve, six, pyparsing, platformdirs, pillow, packaging, numpy, lxml, kiwisolver, joblib, idna, frozendict, fonttools,cycler, charset-normalizer, certifi, scipy, requests, python-dateutil, html5lib, contourpy, beautifulsoup4, scikit-learn, pandas, matplotlib, yfinance, ta
+Successfully installed beautifulsoup4-4.13.3 certifi-2025.1.31 charset-normalizer-3.4.1 contourpy-1.3.1 cycler-0.12.1 fonttools-4.56.0 frozendict-2.4.6 html5lib-1.1 idna-3.10 joblib-1.4.2 kiwisolver-1.4.8 lxml-5.3.1 matplotlib-3.10.0 multitasking-0.0.11 numpy-2.2.2 packaging-24.2 pandas-2.2.3 peewee-3.17.9 pillow-11.1.0 platformdirs-4.3.6 pyparsing-3.2.1 python-dateutil-2.9.0.post0 pytz-2025.1 requests-2.32.3 scikit-learn-1.6.1 scipy-1.15.1 six-1.17.0 soupsieve-2.6 ta-0.11.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2025.1 urllib3-2.3.0 webencodings-0.5.1 yfinance-0.2.52
+
+(block_b_challenge) C:\Users\dylan>python -c "import yfinance; import pandas; import ta; import sklearn; import matplotlib; print('All packages installed successfully!')"
+All packages installed successfully!
+
+(block_b_challenge) C:\Users\dylan>pip install seaborn
+Collecting seaborn
+  Using cached seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Requirement already satisfied: numpy!=1.24.0,>=1.20 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from seaborn) (2.2.2)
+Requirement already satisfied: pandas>=1.2 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from seaborn) (2.2.3)
+Requirement already satisfied: matplotlib!=3.6.1,>=3.4 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from seaborn) (3.10.0)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (frommatplotlib!=3.6.1,>=3.4->seaborn) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (24.2)
+Requirement already satisfied: pillow>=8 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (frommatplotlib!=3.6.1,>=3.4->seaborn) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from pandas>=1.2->seaborn) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from pandas>=1.2->seaborn) (2025.1)
+Requirement already satisfied: six>=1.5 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.4->seaborn) (1.17.0)
+Using cached seaborn-0.13.2-py3-none-any.whl (294 kB)
+Installing collected packages: seaborn
+Successfully installed seaborn-0.13.2
+
+(block_b_challenge) C:\Users\dylan>python nio_visuals.py
+python: can't open file 'C:\\Users\\dylan\\nio_visuals.py': [Errno 2] No such file or directory
+
+(block_b_challenge) C:\Users\dylan>nio_visuals.py
+'nio_visuals.py' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>"C:\Users\dylan\Downloads\nio_visuals.py"
+
+(block_b_challenge) C:\Users\dylan>
+[main 2025-02-11T06:19:37.739Z] update#setState idle
+(node:31040) [DEP0168] DeprecationWarning: Uncaught N-API callback exception detected, please run node with option --force-node-api-uncaught-exceptions-policy=true to handle those exceptions properly.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+[main 2025-02-11T06:20:07.743Z] update#setState checking for updates
+[main 2025-02-11T06:20:07.788Z] update#setState idle
+a
+'a' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>nio_rl_visuals.py
+'nio_rl_visuals.py' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>"C:\Users\dylan\Downloads\nio_rl_visuals.py"
+
+(block_b_challenge) C:\Users\dylan>
+sd
+'sd' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>python "C:\Users\dylan\Downloads\nio_rl_visuals.py"
+Traceback (most recent call last):
+  File "C:\Users\dylan\Downloads\nio_rl_visuals.py", line 8, in <module>
+    from stable_baselines3 import DQN
+ModuleNotFoundError: No module named 'stable_baselines3'
+
+(block_b_challenge) C:\Users\dylan>pip install gym.spaces
+ERROR: Could not find a version that satisfies the requirement gym.spaces (from versions: none)
+ERROR: No matching distribution found for gym.spaces
+
+(block_b_challenge) C:\Users\dylan>pip install gym
+Collecting gym
+  Downloading gym-0.26.2.tar.gz (721 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 721.7/721.7 kB 7.4 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy>=1.18.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from gym) (2.2.2)
+Collecting cloudpickle>=1.2.0 (from gym)
+  Downloading cloudpickle-3.1.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting gym_notices>=0.0.4 (from gym)
+  Downloading gym_notices-0.0.8-py3-none-any.whl.metadata (1.0 kB)
+Downloading cloudpickle-3.1.1-py3-none-any.whl (20 kB)
+Downloading gym_notices-0.0.8-py3-none-any.whl (3.0 kB)
+Building wheels for collected packages: gym
+  Building wheel for gym (pyproject.toml) ... done
+  Created wheel for gym: filename=gym-0.26.2-py3-none-any.whl size=827706 sha256=e230bf0a26da4437e24f459fca6dfbd9115c42dc5c0dfaca3bc1a1834a5d7dac
+  Stored in directory: c:\users\dylan\appdata\local\pip\cache\wheels\95\51\6c\9bb05ebbe7c5cb8171dfaa3611f32622ca4658d53f31c79077
+Successfully built gym
+Installing collected packages: gym_notices, cloudpickle, gym
+Successfully installed cloudpickle-3.1.1 gym-0.26.2 gym_notices-0.0.8
+
+(block_b_challenge) C:\Users\dylan>pip install stable-baselines3[extra]
+Collecting stable-baselines3[extra]
+  Downloading stable_baselines3-2.5.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting gymnasium<1.1.0,>=0.29.1 (from stable-baselines3[extra])
+  Downloading gymnasium-1.0.0-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: numpy<3.0,>=1.20 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (fromstable-baselines3[extra]) (2.2.2)
+Collecting torch<3.0,>=2.3 (from stable-baselines3[extra])
+  Downloading torch-2.6.0-cp312-cp312-win_amd64.whl.metadata (28 kB)
+Requirement already satisfied: cloudpickle in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from stable-baselines3[extra]) (3.1.1)
+Requirement already satisfied: pandas in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from stable-baselines3[extra]) (2.2.3)
+Requirement already satisfied: matplotlib in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from stable-baselines3[extra]) (3.10.0)
+Collecting opencv-python (from stable-baselines3[extra])
+  Downloading opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Collecting pygame (from stable-baselines3[extra])
+  Downloading pygame-2.6.1-cp312-cp312-win_amd64.whl.metadata (13 kB)
+Collecting tensorboard>=2.9.1 (from stable-baselines3[extra])
+  Downloading tensorboard-2.18.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting psutil (from stable-baselines3[extra])
+  Downloading psutil-6.1.1-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting tqdm (from stable-baselines3[extra])
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting rich (from stable-baselines3[extra])
+  Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting ale-py>=0.9.0 (from stable-baselines3[extra])
+  Downloading ale_py-0.10.1-cp312-cp312-win_amd64.whl.metadata (7.8 kB)
+Requirement already satisfied: pillow in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from stable-baselines3[extra]) (11.1.0)
+Requirement already satisfied: typing-extensions>=4.3.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from gymnasium<1.1.0,>=0.29.1->stable-baselines3[extra]) (4.12.2)
+Collecting farama-notifications>=0.0.1 (from gymnasium<1.1.0,>=0.29.1->stable-baselines3[extra])
+  Downloading Farama_Notifications-0.0.4-py3-none-any.whl.metadata (558 bytes)
+Collecting absl-py>=0.4 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting grpcio>=1.48.2 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading grpcio-1.70.0-cp312-cp312-win_amd64.whl.metadata (4.0 kB)
+Collecting markdown>=2.6.8 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading Markdown-3.7-py3-none-any.whl.metadata (7.0 kB)
+Requirement already satisfied: packaging in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from tensorboard>=2.9.1->stable-baselines3[extra]) (24.2)
+Collecting protobuf!=4.24.0,>=3.19.6 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading protobuf-5.29.3-cp310-abi3-win_amd64.whl.metadata (592 bytes)
+Requirement already satisfied: setuptools>=41.0.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from tensorboard>=2.9.1->stable-baselines3[extra]) (75.8.0)
+Requirement already satisfied: six>1.9 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from tensorboard>=2.9.1->stable-baselines3[extra]) (1.17.0)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting filelock (from torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting networkx (from torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Collecting fsspec (from torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading fsspec-2025.2.0-py3-none-any.whl.metadata (11 kB)
+Collecting sympy==1.13.1 (from torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch<3.0,>=2.3->stable-baselines3[extra])
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (frommatplotlib->stable-baselines3[extra]) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib->stable-baselines3[extra]) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib->stable-baselines3[extra]) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib->stable-baselines3[extra]) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (frommatplotlib->stable-baselines3[extra]) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from matplotlib->stable-baselines3[extra]) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from pandas->stable-baselines3[extra]) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\dylan\anaconda3\envs\block_b_challenge\lib\site-packages (from pandas->stable-baselines3[extra]) (2025.1)
+Collecting markdown-it-py>=2.2.0 (from rich->stable-baselines3[extra])
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->stable-baselines3[extra])
+  Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting colorama (from tqdm->stable-baselines3[extra])
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->stable-baselines3[extra])
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard>=2.9.1->stable-baselines3[extra])
+  Downloading MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl.metadata (4.1 kB)
+Downloading ale_py-0.10.1-cp312-cp312-win_amd64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 3.0 MB/s eta 0:00:00
+Downloading gymnasium-1.0.0-py3-none-any.whl (958 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 958.1/958.1 kB 3.4 MB/s eta 0:00:00
+Downloading tensorboard-2.18.0-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 3.0 MB/s eta 0:00:00
+Downloading torch-2.6.0-cp312-cp312-win_amd64.whl (204.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 204.1/204.1 MB 10.1 MB/s eta 0:00:00
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 11.2 MB/s eta 0:00:00
+Downloading opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl (39.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.5/39.5 MB 11.4 MB/s eta 0:00:00
+Downloading psutil-6.1.1-cp37-abi3-win_amd64.whl (254 kB)
+Downloading pygame-2.6.1-cp312-cp312-win_amd64.whl (10.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 9.3 MB/s eta 0:00:00
+Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+Downloading stable_baselines3-2.5.0-py3-none-any.whl (183 kB)
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Downloading absl_py-2.1.0-py3-none-any.whl (133 kB)
+Downloading Farama_Notifications-0.0.4-py3-none-any.whl (2.5 kB)
+Downloading grpcio-1.70.0-cp312-cp312-win_amd64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 12.3 MB/s eta 0:00:00
+Downloading Markdown-3.7-py3-none-any.whl (106 kB)
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading protobuf-5.29.3-cp310-abi3-win_amd64.whl (434 kB)
+Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 15.5 MB/s eta 0:00:00
+Downloading tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+Downloading fsspec-2025.2.0-py3-none-any.whl (184 kB)
+Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 13.4 MB/s eta 0:00:00
+Downloading MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl (15 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 8.6 MB/s eta 0:00:00
+Installing collected packages: mpmath, farama-notifications, tensorboard-data-server, sympy, pygments, pygame, psutil, protobuf, opencv-python, networkx, mdurl, MarkupSafe, markdown, gymnasium, grpcio, fsspec, filelock, colorama, ale-py, absl-py, werkzeug, tqdm, markdown-it-py, jinja2, torch, tensorboard, rich, stable-baselines3
+Successfully installed MarkupSafe-3.0.2 absl-py-2.1.0 ale-py-0.10.1 colorama-0.4.6 farama-notifications-0.0.4 filelock-3.17.0 fsspec-2025.2.0 grpcio-1.70.0 gymnasium-1.0.0 jinja2-3.1.5 markdown-3.7 markdown-it-py-3.0.0 mdurl-0.1.2 mpmath-1.3.0 networkx-3.4.2 opencv-python-4.11.0.86 protobuf-5.29.3 psutil-6.1.1 pygame-2.6.1 pygments-2.19.1 rich-13.9.4 stable-baselines3-2.5.0 sympy-1.13.1 tensorboard-2.18.0 tensorboard-data-server-0.7.2 torch-2.6.0 tqdm-4.67.1 werkzeug-3.1.3
+
+(block_b_challenge) C:\Users\dylan>[main 2025-02-11T06:29:03.624Z] Extension host with pid 36340 exited with code: 0, signal: unknown.
+
+(block_b_challenge) C:\Users\dylan>pyhton "C:\Users\dylan\Downloads\nio_rl_visuals.py"
+'pyhton' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>"C:\Users\dylan\Downloads\nio_rl_visuals.py"
+
+(block_b_challenge) C:\Users\dylan>
+[main 2025-02-11T06:31:56.620Z] update#setState idle
+(node:9172) [DEP0168] DeprecationWarning: Uncaught N-API callback exception detected, please run node with option --force-node-api-uncaught-exceptions-policy=true to handle those exceptions properly.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+[main 2025-02-11T06:32:26.634Z] update#setState checking for updates
+[main 2025-02-11T06:32:26.677Z] update#setState idle
+
+(block_b_challenge) C:\Users\dylan>node --force-node-api-uncaught-exceptions-policy=true
+'node' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>export NODE_OPTIONS="--force-node-api-uncaught-exceptions-policy=true"
+'export' is not recognized as an internal or external command,
+operable program or batch file.
+
+(block_b_challenge) C:\Users\dylan>tasklist | findstr node
+node.exe                     25400 Console                    2     40,356 K
+
+(block_b_challenge) C:\Users\dylan>taskkill /F /IM node.exe
+SUCCESS: The process "node.exe" with PID 25400 has been terminated.
+
+(block_b_challenge) C:\Users\dylan>"C:\Users\dylan\Downloads\nio_rl_visuals.py"
+
+(block_b_challenge) C:\Users\dylan>
+python rs\dylan\Downloads\nio_rl_visuals.py"
+python: can't open file 'C:\\Users\\dylan\\rs\\dylan\\Downloads\\nio_rl_visuals.py': [Errno 2] No such file or directory
+
+(block_b_challenge) C:\Users\dylan>python "C:\Users\dylan\Downloads\nio_rl_visuals.py"
+Mean Absolute Error (Linear Regression): 1.01
